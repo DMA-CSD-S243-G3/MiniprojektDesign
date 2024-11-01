@@ -9,7 +9,6 @@ package model;
  */
 public class LoanContainer
 {
-    
     /**
      * Constructor for objects of class LoanContainer
      */

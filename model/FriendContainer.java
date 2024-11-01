@@ -1,7 +1,5 @@
 package model;
 import java.util.ArrayList;
-
-
 /**
  * Write a description of class FriendContainer here.
  *

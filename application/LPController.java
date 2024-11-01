@@ -1,6 +1,6 @@
-package Application;
-import Model.LPContainer;
-import Model.Copy;
+package application;
+import model.LPContainer;
+import model.Copy;
 
 
 /**

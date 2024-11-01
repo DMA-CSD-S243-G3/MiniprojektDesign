@@ -1,6 +1,5 @@
-package Model;
+package model;
 import java.util.ArrayList;
-import Model.LP;
 
 
 /**

@@ -1,6 +1,4 @@
-package Model;
-
-
+package model;
 /**
  * Write a description of class Copy here.
  *

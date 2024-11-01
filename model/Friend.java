@@ -1,6 +1,4 @@
 package model;
-
-
 /**
  * Write a description of class Friend here.
  *
