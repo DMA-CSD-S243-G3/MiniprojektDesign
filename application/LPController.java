@@ -1,4 +1,6 @@
-package application;
+package Application;
+import Model.LPContainer;
+import Model.Copy;
 
 
 /**
@@ -9,12 +11,18 @@ package application;
  */
 public class LPController
 {
+    private LPContainer containerOfLP;
     
     /**
      * Constructor for objects of class LPController
      */
     public LPController()
     {
-        
+        this.containerOfLP = LPContainer.getInstance();
+    }
+    
+    public Copy findLPBySerialNumber(int serialNumber)
+    {
+        return containerOfLP.findCopyBySerialNumber(serialNumber);
     }
 }

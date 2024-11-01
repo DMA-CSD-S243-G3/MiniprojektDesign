@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 
 /**
@@ -9,12 +9,28 @@ package model;
  */
 public class Copy
 {
-    
+    private int serialNumber;
+    private String purchaseDate;
+    private String purchasePrice;
+    private boolean isBorrowed;
     /**
      * Constructor for objects of class Copy
      */
-    public Copy()
+    public Copy(int serialNumber, String purchaseDate, String purchasePrice, boolean isBorrowed)
     {
+        this.serialNumber = serialNumber;
+        this.purchaseDate = purchaseDate;
+        this.purchasePrice = purchasePrice;
+        this.isBorrowed = isBorrowed;
+    
         
     }
+    
+    public int getSerialNumber()
+    {
+        return this.serialNumber;
+    }
+    
+    
+
 }
