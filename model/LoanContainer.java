@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 
 /**
@@ -9,11 +10,23 @@ package model;
  */
 public class LoanContainer
 {
+    private ArrayList<Loan> collectionOfLoan;
+    private static LoanContainer instance = new LoanContainer();
     /**
      * Constructor for objects of class LoanContainer
      */
-    public LoanContainer()
+    private LoanContainer()
     {
-        
+       collectionOfLoan = new ArrayList<>(); 
+    }
+    
+    public static LoanContainer getInstance()
+    {
+        return instance;    
+    }
+    
+    public void addLoan(Loan newLoanOfLP)
+    {
+        collectionOfLoan.add(newLoanOfLP);
     }
 }
