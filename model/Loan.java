@@ -15,13 +15,12 @@ package model;
 public class Loan
 {
     private int loanNumber;
-    
     private String borrowDate;
     private String period;
     private String state;
-    
     private Copy copyLP;
     private Friend loanerFriend;
+    private static int count = 0;
     
     
     /**
@@ -29,7 +28,8 @@ public class Loan
      */
     public Loan()
     {
-        this.loanNumber = 0;
+        this.loanNumber = count;
+        count = count + 1;
         
         this.borrowDate = "";
         this.period = "";

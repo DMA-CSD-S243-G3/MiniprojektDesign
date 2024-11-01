@@ -13,7 +13,6 @@ import model.Friend;
 public class FriendController
 {
     private FriendContainer friendContainer;
-    private Friend friend;
     
     /**
      * Constructor for objects of class FriendController
@@ -24,8 +23,8 @@ public class FriendController
         
     }
     
-    public Friend findFriendByPhoneNumber (String phoneNumber)
+    public Friend findFriendByPhoneNumber(String phoneNumber)
     {
-        return friendContainer.findFriendByPhoneNumber (phoneNumber);
+        return friendContainer.findFriendByPhoneNumber(phoneNumber);
     }
 }

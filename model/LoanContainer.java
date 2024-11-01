@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class LoanContainer
 {
     private ArrayList<Loan> collectionOfLoan;
-    private static LoanContainer instance = new LoanContainer();
+    private static LoanContainer instance;
     /**
      * Constructor for objects of class LoanContainer
      */
@@ -22,6 +22,10 @@ public class LoanContainer
     
     public static LoanContainer getInstance()
     {
+        if (instance == null)
+        {
+            instance = new LoanContainer();
+        }
         return instance;    
     }
     
